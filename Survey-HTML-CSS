@@ -79,7 +79,7 @@
         </label>
         <br><br>
       <button id="submit" type="submit">
-          Submit
+          Register
         </button>
       </form>
     </div>
