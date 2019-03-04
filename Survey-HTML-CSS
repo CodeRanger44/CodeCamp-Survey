@@ -18,7 +18,10 @@
       margin-right: 400px;
       margin-top: 25px;
       margin-left: 25px;
-
+    }
+    textarea {
+      height: 50px;
+      width: 300px;
     }
   </style>
   <main>
@@ -53,13 +56,13 @@
         <br><br>
         <legend>Requested Training Month:</legend>
         <label for="March">
-          March <input type="radio" name="training-date" id="March">
+          March <input type="radio" name="training-date" id="March" value="March">
           </label>
          <label for="April">
-           April <input type="radio" name="training-date" id="April">
+           April <input type="radio" name="training-date" id="April" value="April">
            </label>
         <label for="May">
-          May <input type="radio" name="training-date" id="May">
+          May <input type="radio" name="training-date" id="May" value="May">
         </label>
         <br><br>
         <legend>Certifications:</legend>
@@ -74,11 +77,10 @@
           </label>
         <br><br>
         <legend>Comments:</legend>
-        <label>
-          <input type="textarea" size="41" placeholder="Enter special requests or accomodations here">
-        </label>
+        <textarea>
+        </textarea>
         <br><br>
-      <button id="submit" type="submit">
+        <button id="submit" type="submit">
           Register
         </button>
       </form>
