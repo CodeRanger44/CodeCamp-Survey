@@ -9,10 +9,16 @@
       text-align: center;
       color: blue;
     }
+    p {
+      margin-left: 10px;
+      margin-right: 50px;
+    }
     .form {
       background-color: lightgray;
       margin-right: 400px;
       margin-top: 25px;
+      margin-left: 25px;
+
     }
   </style>
   <main>
@@ -24,12 +30,56 @@
     </p>
     <div>
       <form class="form" id="survey-form" action="/www.raymondlosborne@hotmail.com">
-        <label for="name">
-          Name: <input type="text" id="name" placeholder="enter name here" required>
+        <label id="name-label" for="name">
+          Name: <input type="text" id="name" placeholder="First MI Last" required>
         </label>
         <br><br>
-        <label for="email">
-          E-Mail: <input type="text" id="email" placeholder="enter e-mail address" required>
+        <label id="email-label" for="email">
+          E-Mail: <input type="email" id="email" placeholder="first.last@corangers.org" required>
+        </label>
+        <br><br>
+        <label id="number-label" for="number">
+          Service Number: <input type="number" size="9" min="523310000" max="523319999" id="number" placeholder="#########" name="number" required>
+        </label>
+        <br><br>
+        <label for="dropdown">
+          Troop:
+        </label>
+        <select id="dropdown">
+          <option value="H">H</option>
+          <option value="I">I</option>
+          <option value="K">K</option>
+          </select>
+        <br><br>
+        <legend>Requested Training Month:</legend>
+        <label for="March">
+          March <input type="radio" name="training-date" id="March">
+          </label>
+         <label for="April">
+           April <input type="radio" name="training-date" id="April">
+           </label>
+        <label for="May">
+          May <input type="radio" name="training-date" id="May">
+        </label>
+        <br><br>
+        <legend>Certifications:</legend>
+        <label for="OC">
+          OC<input type="checkbox" name="certs" id="OC" value="O">
+          </label>
+            <label for="Firearms">
+          Firearms <input type="checkbox" name="certs" id="Firearms" value="F">
+          </label>
+            <label for="Taser">
+          Taser <input type="checkbox" name="certs" id="Taser" value="T">
+          </label>
+        <br><br>
+        <legend>Comments:</legend>
+        <label>
+          <input type="textarea" size="41" placeholder="Enter special requests or accomodations here">
+        </label>
+        <br><br>
+        <label for="submit">
+          <input type="submit" id="submit">
         </label>
       </form>
     </div>
