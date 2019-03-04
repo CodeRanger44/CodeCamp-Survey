@@ -32,7 +32,7 @@
       The in-service training will be held on multiple days. Please be sure to select the best date that works for you. Needed equipment and other logistics will be covered in a welcome email upon registration.
     </p>
     <div>
-      <form class="form" id="survey-form" action="/www.raymondlosborne@hotmail.com">
+      <form class="form" id="survey-form" action="/mailto:raymondlosborne@hotmail.com">
         <label id="name-label" for="name">
           Name: <input type="text" id="name" placeholder="First MI Last" required>
         </label>
