@@ -78,9 +78,9 @@
           <input type="textarea" size="41" placeholder="Enter special requests or accomodations here">
         </label>
         <br><br>
-        <label for="submit">
-          <input type="submit" id="submit">
-        </label>
+      <button id="submit" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   </main>
